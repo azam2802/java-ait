@@ -129,8 +129,8 @@ public class Main {
 
 class Task implements Comparable<Task> {
     private String taskName;
-    private int priority; // Заменяем Integer на int
-    private int duration; // Заменяем Integer на int
+    private int priority; 
+    private int duration; 
 
     public Task(String taskName, int priority, int duration) {
         this.taskName = taskName;
@@ -152,7 +152,6 @@ class Task implements Comparable<Task> {
 
     @Override
     public int compareTo(Task other) {
-        // Упрощаем сравнение без использования compareTo для примитивов
         if (other.priority > this.priority) {
             return 1;
         } else if (other.priority < this.priority) {
